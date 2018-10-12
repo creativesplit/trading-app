@@ -5,7 +5,7 @@ import './nav.css';
 class Nav extends Component {
     constructor(props){
         super(props)
-    
+        
         this.state = {
 
         }
@@ -13,8 +13,8 @@ class Nav extends Component {
   render() {
     return (
       <div className='nav-container'>
-        <a className='Home' href='#'>Home</a>
-        <a className='About' href='#'>About</a>
+        <a className='Home' href='/stocks'>Home</a>
+        <a className='About' href='/about'>About</a>
       </div>
     );
   }

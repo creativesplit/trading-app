@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './dashboard.css'
-import listOfStocks from '../../data/stock-data.json'
+import listOfStocks from '../Data/stock-data.json'
 
 
-let  showStocks = listofStocks
+//let  showStocks = listofStocks
+
+
 
 class App extends Component {
     constructor(props){
