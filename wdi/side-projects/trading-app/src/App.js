@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+//import Home from '../Home/Home'
+// import { Route, Link, Switch} from 'react-router-dom'
+// import Currencies from '../Currencies/Currencies'
+// import Price from '../Price/Price'
+
 
 class App extends Component {
   render() {
