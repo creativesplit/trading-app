@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Nav from './navigation-controller/nav.js'
+import Dashboard from '../dashboard/dashboard.js'
+import { Route, Link, Switch} from 'react-router-dom'
 
 //import Home from '../Home/Home'
 // import { Route, Link, Switch} from 'react-router-dom'
@@ -8,24 +11,24 @@ import './App.css';
 
 
 class App extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+
+    }
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+      <nav>
+        <Nav />
+        </nav>
       </div>
+      <main>
+        <Route path='/dashboard/dashboard.js' render{()}  Dashboard/>
+
+      </main>
     );
   }
 }
